@@ -1,0 +1,26 @@
+{
+  "name": "my-personal-blog",
+  "description": "An javascript personal blog base on html",
+  "main": "index.js",
+  "authors": [
+    "Qiujie Linbao"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "html",
+    "js",
+    "bootstrap"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
