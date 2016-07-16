@@ -9,3 +9,62 @@
 	margin:0px;
 	*/
 }
+body{
+	color: #666666;
+	background: url(../img/bg.jpg);
+}
+a{
+	cursor: pointer;
+	color: #fff;
+}
+marquee{
+	color: black;
+}
+.container{
+	background: #FFE4C4;
+	border-radius: 5px;
+}
+.head-logo{
+	width: 250px;
+	height: 250px;
+	border-radius: 250px;
+	margin:0px auto;
+	background: url(../img/head-logo.jpg)  53% 32% no-repeat;
+	cursor: pointer;
+}
+.nav-set{
+	border: #eee 1px solid;
+}
+.nav-set div{
+	border-left: #eee 1px solid;
+	border-right: #eee 1px solid;
+	background: #CC6699;
+}
+.content {
+	background: #66CC99;
+	padding-top:20px;
+}
+.sprite{
+	margin:20% 0%;
+}
+.sprite .text-left{
+	background: #CC3399;
+	color:#ccc;
+}
+.sprite .text-center{
+	background: #FFCC99;
+}
+.sprite .text-right{
+	background: #FF6666;
+}
+.video{
+	width: 640px;
+	height: 480px;
+	margin: 0px auto;
+}
+.nav-outside-index{
+	margin: 10px;
+}
+.courses,.summation{
+	margin: 20px;
+}

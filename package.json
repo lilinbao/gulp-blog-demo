@@ -1,5 +1,5 @@
 {
-  "name": "my-personal-blog",
+  "name": "Linbao's Personal Blog",
   "version": "1.0.0",
   "description": "An javascript personal blog base on html",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "js",
     "bootstrap"
   ],
-  "author": "Qiujie Linbao",
+  "author": "Linbao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/linbao-lee/my-personal-blog/issues"
@@ -28,6 +28,7 @@
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^4.1.0",
+    "gulp-header": "^1.8.7",
     "gulp-jshint": "^2.0.1",
     "gulp-minify": "0.0.12",
     "gulp-minify-css": "^1.2.4",

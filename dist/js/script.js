@@ -1,0 +1,1 @@
+$(document).ready(function(){console.log("jquery has been init"),$(document).on("click",function(){console.log("document: click event has been triggered")})}),$(document).ready(function(){console.log("jquery has been init on app2")});
