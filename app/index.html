@@ -3,6 +3,7 @@
 <head>
 	<title>Welcome to Q's Blog</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -56,11 +57,54 @@
 		<div class="col-xs-4 text-right">真别。。。</div>
 	</div>
 </div>
+<div class="container">
+	<form id="home-form" action="#" class="form-horizontal">
+		<div class="form-group">
+			<div class="col-xs-2">
+				<label class="control-label">Username</label>
+			</div>
+			<div class="col-xs-10">
+				<input class="form-control" type="text" name="username" />
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-xs-2">
+				<label class="control-label">password</label>
+			</div>
+			<div class="col-xs-10">
+				<input class="form-control" type="text" name="password" />
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-xs-11 col-md-2">
+				<label class="control-label">please input your suggestion</label>
+				<span class="remainder">165/165</span>
+			</div>
+			<div class="col-xs-11 col-md-10">
+				<textarea class="form-control" row="3" name="suggestion" id="suggestion"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-xs-11 col-md-2">
+				<label class="control-label">please input your suggestion</label>
+				<span class="remainder">165/165</span>
+			</div>
+			<div class="col-xs-11 col-md-10">
+				<textarea class="form-control" row="3" name="suggestion" id="suggestion"></textarea>
+			</div>
+		</div>
+		<div class="form-group text-center">
+			<button type="cancel" id="cancel" class="btn btn-default">Cancel</button>
+			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</div>
 <marquee direction='left'>
 	<div class="marquee-wrapper">
 		<div class="row">我没骗你吧。。。</div>
 	</div>
 </marquee>
-
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

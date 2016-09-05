@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html lang="cn">
+<html>
+<head>
+	<title>Welcome to Q's Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.form-group{
+			position: relative;
+			margin-top: 10px;
+		}
+		.form-control{
+			min-height: 50px;
+		}
+		.province label{
+			margin-top: 18px;
+		}
+
+		label{
+			position: absolute;
+			top: 15px;
+			margin-left: 10px;
+			color: #bbb;
+			font-weight: 100;
+		}
+	</style>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<form id="contact" action="mail/send.php" method="post" novalidate="novalidate">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="partner-name">您的公司全称<sup> *</sup></label>
+                <input type="text" name="partner-name" id="partner-name" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group province">
+                <label for="province">您公司总部所在省<sup> *</sup></label><br>
+                <select name="province" id="province" class="form-control" required="" aria-required="true">
+                    <option></option>
+                    <option value="北京市">北京市</option>
+                    <option value="天津市">天津市</option>
+                    <option value="河北省">河北省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="內蒙古自治区">內蒙古自治区</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="上海市">上海市</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="福建省">福建省</option>
+                    <option value="江西省">江西省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="广西壮族自治区">广西壮族自治区</option>
+                    <option value="海南省">海南省</option>
+                    <option value="重庆市">重庆市</option>
+                    <option value="四川省">四川省</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="西藏自治区">西藏自治区</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="青海省">青海省</option>
+                    <option value="宁夏回族自治区">宁夏回族自治区</option>
+                    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                    <option value="香港特别行政区">香港特别行政区</option>
+                    <option value="澳门特别行政区">澳门特别行政区</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact-person-phone">联系人手机号<sup> *</sup></label>
+                <input type="tel" name="contact-person-phone" id="contact-person-phone" maxlength="18" placeholder="" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="daily-sales">您电商平台日均销量<sup> *</sup></label>
+                <input type="number" name="daily-sales" id="daily-sales" min="0" placeholder="" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="average-price">您电商平台的平均客单价<sup> *</sup></label>
+                <input type="number" name="average-price" id="average-price" min="0" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="verification-code">验证码</label>
+                <input type="text" name="verification-code" id="verification-code" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="URL">您电商平台的网址<sup> *</sup></label>
+                <input type="url" name="URL" id="URL" class="form-control" required="" placeholder="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="contact-person-name">联系人姓名<sup> *</sup></label>
+                <input type="text" name="contact-person-name" id="contact-person-name" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="daily-visitors">您电商平台日均独立访客量<sup> *</sup></label>
+                <input type="number" name="daily-visitors" id="daily-visitors" min="0" class="form-control" required="" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="additional-contact">联系人其他信息(电子邮箱，微信，QQ号)</label>
+                <input type="text" name="additional-contact" id="additional-contact" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="additional-message">附加信息</label>
+                <textarea name="additional-message" id="additional-message" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+            <div class="form-group">
+                <input class="btn" type="submit" name="" value="点击发送">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.form-control').focus(function(){
+			$(this).animate({paddingTop:'15px'}, 300).siblings('label').animate({fontSize: '12px', top: '3px'}, 300).css({color:'#990066'});;
+		});
+		$('.form-control').blur(function(){
+			if(!$(this).val()){
+				$(this).animate({paddingTop:'auto'}, 200).siblings('label').animate({fontSize: '14px', top: '15px'}, 100).css({color:'#bbb'});
+			}
+		});
+		$.each($('.form-control'), function(key, item){
+			if(!$(this).val()){
+				//$(this).animate({paddingTop:'auto'}, 200).siblings('label').animate({fontSize: '14px', top: '15px'}, 100);
+			}
+		});
+	});
+</script>
+</body>
+</html>

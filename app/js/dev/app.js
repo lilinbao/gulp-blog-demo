@@ -1,11 +1,12 @@
 /**
-Created at 2016-06-30
+Created at 2016-08-17
 Author Linbao
 Email linbaolee@gmail.com
 */
 $(document).ready(function(){
-	console.log('jquery has been init');
-	$(document).on('click',function(){
-		console.log('document: click event has been triggered');
+	$('textarea.form-control').on('keyup', function(){
+		$(this).parent().parent().find('span.remainder').text((165 - $(this).val().length)+'/165');
 	});
+
+	
 });

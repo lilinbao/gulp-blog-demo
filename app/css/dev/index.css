@@ -10,8 +10,8 @@
 	*/
 }
 body{
-	color: #666666;
-	background: url(../img/bg.jpg);
+	/*color: #666666;
+	background: url(../img/bg.jpg);*/
 }
 a{
 	cursor: pointer;
@@ -21,7 +21,7 @@ marquee{
 	color: black;
 }
 .container{
-	background: #FFE4C4;
+	background: #cc3333;/*#FFE4C4*/
 	border-radius: 5px;
 }
 .head-logo{
